@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Arte del Volcán</title>
+<style>
+body {background-color: rgba(163, 243, 252, 0.306); font-family: Arial; margin: 0; color: #38332f; line-height: 1.6;}
+header, footer {background-color: #38332f; color: white; text-align: center; padding: 20px;}
+main {padding: 20px; max-width: 1000px; margin: auto;}
+section {padding: 20px; margin-bottom: 20px; border-radius: 8px;}
+.destacada-blanca {background-color: #ffffff;}
+.destacada-azul {background-color: #2ea4ff;}
+.destacada-amarillo {background-color: #ffc232;}
+button {background-color: #38332f; color: white; padding: 12px 18px; margin: 5px; border: none; border-radius: 6px; cursor: pointer;}
+button:hover {background-color: #a3471e;}
+.ventana {display: none; background-color: #fff4e5; padding: 20px; margin-top: 20px; border-radius: 8px;}
+.cerrar {float: right;}
+
+/* Estilo de las imágenes añadidas */
+.ventana img {max-width: 100%; width: 400px; height: auto; display: block; margin: 15px 0; border-radius: 8px;}
+</style>
+</head>
+<body>
+<header>
+<h1>El Arte del Volcán</h1>
+<p>Impulsar el arte y patrimonio canario</p>
+</header>
+<main>
+<section>
+<h2>Bienvenidos</h2>
+<p>Bienvenidos a El Arte del Volcán, una página dedicada a dar a conocer el arte y el patrimonio cultural de Lanzarote y de las islas Canarias. Nuestro objetivo es descubrir los artistas, paisajes y tradiciones que hacen especial a nuestro archipiélago.</p>
+<p>Canarias no destaca solamente por sus playas, sino también por su historia, sus monumentos y su riqueza cultural. A través de esta página queremos dar a conocer estos elementos y fomentar el respeto por nuestro patrimonio.</p>
+</section>
+<section class="destacada-blanca">
+<h2>¿Por qué elegímos este proyecto?</h2>
+<p>Elegí este proyecto porque creo que el arte y el patrimonio de Canarias deberían darse a conocer más. Vivo en Lanzarote y considero importante que las personas conozcan y valoren nuestra culture.</p>
+<p>Muchas veces no apreciamos suficientemente lo que tenemos cerca. Por eso quiero mostrar la importancia de nuestros artistas, nuestras tradiciones y nuestros paisajes, y ayudar a que otras personas sientan curiosidad por conocerlos.</p>
+<p>Un ejemplo es César Manrique, que demostró que el arte puede integrarse en la naturaleza y que es posible desarrollar una isla respetando su identidad.</p>
+</section>
+<section class="destacada-azul">
+<h2>Nuestro patrimonio</h2>
+<p>Lanzarote posee una gran riqueza artística, cultural y natural. Sus paisajes volcánicos, sus pueblos y sus tradiciones forman parte de nuestra identidad. Cada isla canaria tiene características propias que merecen ser conocidas y conservadas.</p>
+<h3>¿Qué queremos dar a conocer?</h3>
+<ul>
+<li>El arte y los artistas de Canarias.</li>
+<li>Las tradiciones, fiestas y costumbres canarias.</li>
+<li>Los paisajes volcánicos y su valor natural.</li>
+<li>Los monumentos y lugares históricos de las islas.</li>
+<li>La importancia de proteger nuestro patrimonio para el futuro.</li>
+</ul>
+</section>
+<section class="destacada-amarillo">
+<h2>Referentes de las islas Canarias</h2>
+<p>Pulsa en cada botón para descubrir algunos de los principales referentes artísticos, culturales e históricos de cada isla. Todos ellos contribuyen a formar la identidad de nuestro archipiélago.</p>
+<button onclick="mostrar('lanzarote')">Lanzarote</button>
+<button onclick="mostrar('fuerteventura')">Fuerteventura</button>
+<button onclick="mostrar('grancanaria')">Gran Canaria</button>
+<button onclick="mostrar('tenerife')">Tenerife</button>
+<button onclick="mostrar('lapalma')">La Palma</button>
+<button onclick="mostrar('lagomera')">La Gomera</button>
+<button onclick="mostrar('elhierro')">El Hierro</button>
+<button onclick="mostrar('lagraciosa')">La Graciosa</button>
+<div id="lanzarote" class="ventana">
+<button class="cerrar" onclick="cerrar()">✖ Cerrar</button>
+<h3>Lanzarote</h3>
+<p>Lanzarote destaca por sus paisajes volcánicos y por la influencia de César Manrique, que defendió la unión entre arte y naturaleza.</p>
+<h4>César Manrique y su obra</h4>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lanzarote%20Jameos%20del%20Agua%20Pool.jpg" alt="Piscina de los Jameos del Agua, obra relacionada con César Manrique">
+<ul>
+<li><b>César Manrique:</b> artista lanzaroteño que transformó la relación entre arquitectura y paisaje.</li>
+<li><b>Jameos del Agua:</b> espacio artístico creado dentro de un tubo volcánico.</li>
+<li><b>Timanfaya:</b> parque nacional que muestra la fuerza de las erupciones volcánicas.</li>
+<li><b>Fundación César Manrique:</b> conserva y divulga su obra y su pensamiento.</li>
+<li><b>Monumento al Campesino:</b> homenaje al trabajo agrícola tradicional de la isla.</li>
+</ul>
+</div>
+<div id="fuerteventura" class="ventana">
+<button class="cerrar" onclick="cerrar()">✖ Cerrar</button>
+<h3>Fuerteventura</h3>
+<p>Fuerteventura es conocida por sus playas, sus paisajes áridos y sus tradiciones relacionadas con la agricultura y la ganadería.</p>
+<h4>La obra de Juan Ismael</h4>
+<img src="" alt="Casa de los Coroneles, obra relacionada con Juan Ismael">
+<ul>
+<li><b>Casa de los Coroneles:</b> edificio histórico situado en La Oliva.</li>
+<li><b>Dunas de Corralejo:</b> paisaje natural de gran belleza.</li>
+<li><b>Molinos tradicionales:</b> recuerdan la importancia de la agricultura.</li>
+<li><b>Queso majorero:</b> producto tradicional elaborado con leche de cabra.</li>
+<li><b>Betancuria:</b> localidad histórica vinculada a los primeros asentamientos europeos de la isla.</li>
+</ul>
+</div>
+<div id="grancanaria" class="ventana">
+<button class="cerrar" onclick="cerrar()">✖ Cerrar</button>
+<h3>Gran Canaria</h3>
+<p>Gran Canaria combina barrios históricos, arte, arquitectura y paisajes naturales muy variados.</p>
+<h4>Obra de Néstor Martín-Fernández de la Torre</h4>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/El%20Pueblo%20Canario.jpg" alt="El Pueblo Canario, relacionado con el patrimonio artístico de Gran Canaria">
+<ul>
+<li><b>Néstor Martín-Fernández de la Torre:</b> pintor grancanario relacionado con el modernismo.</li>
+<li><b>Vegueta:</b> barrio histórico de Las Palmas de Gran Canaria.</li>
+<li><b>Casa de Colón:</b> museo dedicado a la historia atlántica.</li>
+<li><b>Roque Nublo:</b> uno de los símbolos naturales de la isla.</li>
+<li><b>Fiesta de la Rama:</b> celebración tradicional de Agaete.</li>
+</ul>
+</div>
+<div id="tenerife" class="ventana">
+<button class="cerrar" onclick="cerrar()">✖ Cerrar</button>
+<h3>Tenerife</h3>
+<p>Tenerife destaca por sus artistas, sus ciudades históricas y sus construcciones modernas.</p>
+<h4>Obra de Óscar Domínguez</h4>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/El%20toro%2C%20%C3%93scar%20Dom%C3%ADnguez.jpg" alt="El toro, obra del pintor surrealista Óscar Domínguez">
+<ul>
+<li><b>Óscar Domínguez:</b> pintor canario relacionado con el surrealismo.</li>
+<li><b>Teide:</b> volcán y parque nacional de gran valor natural.</li>
+<li><b>Auditorio de Tenerife:</b> edificio diseñado por Santiago Calatrava.</li>
+<li><b>La Laguna:</b> ciudad histórica declarada Patrimonio Mundial.</li>
+<li><b>Basílica de Candelaria:</b> importante referente religioso y cultural canario.</li>
+</ul>
+</div>
+<div id="lapalma" class="ventana">
+<button class="cerrar" onclick="cerrar()">✖ Cerrar</button>
+<h3>La Palma</h3>
+<p>La Palma es conocida por sus bosques, sus paisajes volcánicos, su artesanía y sus celebraciones populares.</p>
+<ul>
+<li><b>Caldera de Taburiente:</b> parque nacional de gran riqueza natural.</li>
+<li><b>Roque de los Muchachos:</b> importante centro de observación astronómica.</li>
+<li><b>Balcones de Santa Cruz:</b> ejemplo de arquitectura tradicional.</li>
+<li><b>Los Indianos:</b> celebración del Carnaval relacionada con la emigración a América.</li>
+<li><b>Volcán Tajogaite:</b> volcán surgido durante la erupción de 2021.</li>
+</ul>
+</div>
+<div id="lagomera" class="ventana">
+<button class="cerrar" onclick="cerrar()">✖ Cerrar</button>
+<h3>La Gomera</h3>
+<p>La Gomera conserva tradiciones únicas y paisajes naturales de gran importancia.</p>
+<ul>
+<li><b>Silbo gomero:</b> lenguaje silbado reconocido por la UNESCO.</li>
+<li><b>Garajonay:</b> parque nacional con bosques de laurisilva.</li>
+<li><b>Torre del Conde:</b> monumento histórico de San Sebastián de La Gomera.</li>
+<li><b>Chácaras y tambores:</b> instrumentos de la música tradicional.</li>
+<li><b>Salto del Pastor:</b> práctica tradicional para desplazarse por terrenos difíciles.</li>
+</ul>
+</div>
+<div id="elhierro" class="ventana">
+<button class="cerrar" onclick="cerrar()">✖ Cerrar</button>
+<h3>El Hierro</h3>
+<p>El Hierro destaca por sus paisajes volcánicos, sus leyendas y sus tradiciones.</p>
+<ul>
+<li><b>Árbol Garoé:</b> símbolo histórico relacionado con la importancia del agua.</li>
+<li><b>El Sabinar:</b> paisaje de sabinas moldeadas por el viento.</li>
+<li><b>El Julan:</b> zona arqueológica con grabados rupestres.</li>
+<li><b>Bajada de la Virgen de los Reyes:</b> celebración tradicional de gran importancia.</li>
+<li><b>Lagartario:</b> centro dedicado a la conservación del lagarto gigante de El Hierro.</li>
+</ul>
+</div>
+<div id="lagraciosa" class="ventana">
+<button class="cerrar" onclick="cerrar()">✖ Cerrar</button>
+<h3>La Graciosa</h3>
+<p>La Graciosa forma parte del archipiélago Chinijo y destaca por sus paisajes volcánicos y su cultura marinera.</p>
+<ul>
+<li><b>Caleta de Sebo:</b> principal núcleo de población de la isla.</li>
+<li><b>Montaña Amarilla:</b> formación volcánica junto al mar.</li>
+<li><b>Playa de Las Conchas:</b> una de las playas más conocidas de la isla.</li>
+<li><b>Cultura marinera:</b> tradiciones relacionadas con la pesca y la vida junto al océano.</li>
+<li><b>Archipiélago Chinijo:</b> espacio protegido de gran importancia para la biodiversidad.</li>
+</ul>
+</div>
+</section>
+<section>
+<h2>La importancia de conservar nuestro patrimonio</h2>
+<p>Conservar el patrimonio es fundamental para mantener viva la historia y la identidad de Canarias. Los monumentos, las obras artísticas, las fiestas y los paisajes nos ayudan a comprender cómo vivían nuestros antepasados.</p>
+<p>Todos podemos colaborar respetando los espacios naturales, cuidando los lugares históricos y manteniendo vivas nuestras tradiciones. De esta manera, las generaciones futuras también podrán conocer y disfrutar de la riqueza cultural de las islas.</p>
+</section>
+</main>
+<footer>
+<p>El Arte del Volcán - Lanzarote</p>
+<p>Proyecto escolar de 4.º ESO</p>
+</footer>
+<script>
+function mostrar(id) {
+    cerrar();
+    document.getElementById(id).style.display = "block";
+}
+function cerrar() {
+    document.querySelectorAll(".ventana").forEach(v => v.style.display = "none");
+}
+</script>
+</body>
+</html>
